@@ -16,6 +16,7 @@ function ShoppingList(){
                     style={sneaker.style}
                     esthetique={sneaker.esthetique}
                     confort={sneaker.confort}
+                    image={sneaker.image}
                     />
                 ))}
             </div>

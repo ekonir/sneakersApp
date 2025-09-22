@@ -1,3 +1,16 @@
+import airMax from '../assets/sneakers/airJordan.jpg'
+import forceZoom from '../assets/sneakers/airJordan.jpg'
+import airJordan from '../assets/sneakers/airJordan.jpg'
+import airForce from '../assets/sneakers/airJordan.jpg'
+
+import allstar from '../assets/sneakers/chuckTaylor.jpg'
+import chuckTaylor from '../assets/sneakers/chuckTaylor.jpg'
+import runStar from '../assets/sneakers/chuckTaylor.jpg'
+
+import sneakersRouge from '../assets/sneakers/basketsPatch.jpg'
+import basketsPatch from '../assets/sneakers/basketsPatch.jpg'
+import urbanStreet from '../assets/sneakers/basketsPatch.jpg'
+
 export const sneakersList = [
   {
     id: '1',
@@ -6,7 +19,8 @@ export const sneakersList = [
     prix: 69.95,
     style: 'Casual',
     esthetique: 4,
-    confort: 5
+    confort: 5,
+    image : airMax
   },
   {
     id: "2",
@@ -15,7 +29,8 @@ export const sneakersList = [
     prix: 84.95,
     style: "Training",
     esthetique: 3,
-    confort: 4
+    confort: 4,
+    image : forceZoom
   },
   {
     id: "3",
@@ -24,7 +39,8 @@ export const sneakersList = [
     prix: 115,
     style: "Streetwear",
     esthetique: 5,
-    confort: 3
+    confort: 3,
+    image : airJordan
   },
   {
     id: "4",
@@ -33,7 +49,8 @@ export const sneakersList = [
     prix: 69.99,
     style: "Casual",
     esthetique: 4,
-    confort: 4
+    confort: 4,
+    image : allstar
   },
   {
     id: "5",
@@ -42,7 +59,8 @@ export const sneakersList = [
     prix: 85,
     style: "Streetwear",
     esthetique: 4,
-    confort: 1
+    confort: 1,
+    image : chuckTaylor
   },
   {
     id: "6",
@@ -51,7 +69,8 @@ export const sneakersList = [
     prix: 110,
     style: "Streetwear",
     esthetique: 3,
-    confort: 1
+    confort: 1,
+    image : runStar
   },
   {
     id: "7",
@@ -60,7 +79,8 @@ export const sneakersList = [
     prix: 438,
     style: "Mode",
     esthetique: 5,
-    confort: 4
+    confort: 4,
+    image : sneakersRouge
   },
   {
     id: "8",
@@ -69,7 +89,8 @@ export const sneakersList = [
     prix: 374,
     style: "Urbain",
     esthetique: 4,
-    confort: 4
+    confort: 4,
+    image : basketsPatch
   },
   {
     id: "9",
@@ -78,7 +99,8 @@ export const sneakersList = [
     prix: 450,
     style: "Mode",
     esthetique: 5,
-    confort: 2
+    confort: 2,
+    image : urbanStreet
   },
   {
     id: "10",
@@ -87,6 +109,7 @@ export const sneakersList = [
     prix: 119.99,
     style: "Streetwear",
     esthetique: 3,
-    confort: 5
+    confort: 5,
+    image : airForce
   }
 ];

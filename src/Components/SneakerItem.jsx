@@ -4,7 +4,12 @@ import CustomerReview from './CustomerReview';
 function SneakerItem({ nom, marque, prix, style, esthetique, confort}){
     return (
         <div className="sneaker-item">
+            <div className="sneaker-image">
+                {}
+            </div>
+
             <h3>{nom}</h3>
+
             <p className="sneaker-brand">{marque}</p>
             <p className="sneaker-price">{prix} €</p>
             <p className="sneaker-style">{style}</p>
