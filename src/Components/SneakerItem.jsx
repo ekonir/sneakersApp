@@ -1,11 +1,14 @@
 import '../styles/ShoppingItem.css';
 import CustomerReview from './CustomerReview';
 
-function SneakerItem({ nom, marque, prix, style, esthetique, confort}){
+function SneakerItem({ bestSeller,image, nom, marque, prix, style, esthetique, confort}){
     return (
-        <div className="sneaker-item">
+        <div className={`sneaker-item ${bestSeller ? 'best-seller' : ''}`}>
+                {bestSeller && <span className="best-seller-badge">Top Ventes</span>}
+           
+
             <div className="sneaker-image">
-                {}
+                <img src={image} alt={nom} className="sneaker_image"/>
             </div>
 
             <h3>{nom}</h3>

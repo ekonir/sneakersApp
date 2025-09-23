@@ -9,6 +9,8 @@ function ShoppingList(){
             <div className={"sneakers-grid"}>
                 {sneakersList.map((sneaker) =>(
                     <SneakersItem
+                    bestSeller={sneaker.bestSeller}
+                    image={sneaker.image}
                     key={sneaker.id}
                     nom={sneaker.nom}
                     marque={sneaker.marque}
@@ -16,7 +18,7 @@ function ShoppingList(){
                     style={sneaker.style}
                     esthetique={sneaker.esthetique}
                     confort={sneaker.confort}
-                    image={sneaker.image}
+                    
                     />
                 ))}
             </div>

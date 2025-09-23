@@ -40,7 +40,8 @@ export const sneakersList = [
     style: "Streetwear",
     esthetique: 5,
     confort: 3,
-    image : airJordan
+    image : airJordan,
+    bestSeller : true
   },
   {
     id: "4",
@@ -48,8 +49,8 @@ export const sneakersList = [
     marque: "Converse",
     prix: 69.99,
     style: "Casual",
-    esthetique: 4,
-    confort: 4,
+    esthetique: 3,
+    confort: 1,
     image : allstar
   },
   {
@@ -59,8 +60,9 @@ export const sneakersList = [
     prix: 85,
     style: "Streetwear",
     esthetique: 4,
-    confort: 1,
-    image : chuckTaylor
+    confort: 3,
+    image : chuckTaylor,
+    bestSeller : true
   },
   {
     id: "6",
@@ -68,8 +70,8 @@ export const sneakersList = [
     marque: "Converse",
     prix: 110,
     style: "Streetwear",
-    esthetique: 3,
-    confort: 1,
+    esthetique: 4,
+    confort: 3,
     image : runStar
   },
   {
@@ -110,6 +112,7 @@ export const sneakersList = [
     style: "Streetwear",
     esthetique: 3,
     confort: 5,
-    image : airForce
+    image : airForce,
+    bestSeller : true
   }
 ];
