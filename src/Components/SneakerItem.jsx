@@ -1,4 +1,4 @@
-import '../styles/ShoppingItem.css';
+import '../styles/SneakerItem.css';
 import CustomerReview from './CustomerReview';
 
 function SneakerItem({ bestSeller,image, nom, marque, prix, style, esthetique, confort}){
