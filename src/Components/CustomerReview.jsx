@@ -1,8 +1,8 @@
 function CustomerReview ({scaleValue, reviewType}) {
     const range = [1, 2, 3 , 4, 5]
     const scaleType = reviewType === 'confort' ? '😌':'💖'
-
-    return (
+        
+    return ( 
         <div>
             <span>{reviewType} : </span>
             <div style={{display : 'inline'}}>
@@ -13,7 +13,7 @@ function CustomerReview ({scaleValue, reviewType}) {
                 )}
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default CustomerReview;
