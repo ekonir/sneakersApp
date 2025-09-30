@@ -1,17 +1,19 @@
 import '../styles/SneakerItem.css';
-import CustomerReview from './CustomerReview';
+import { useState } from 'react';
 
-function SneakerItem({ bestSeller,image, nom, marque, prix, style, esthetique, confort}){
+function SneakerItem({ nom, marque, prix, style, esthetique, confort, image, bestSeller =false }){
+    const [showReview,setShowReview] = useState(false)
     const formatReview = (reviewType, scaleValue)=>{
      const scaleType = reviewType === 'confort' ? '😌':'💖'
      const icons = scaleType.repeat(scaleValue);
      return `${reviewType}: ${icons} (${scaleValue}/5)`;
     };
     
-     const handleClickAvis = () =>{
+     const handleToggleAvis = () =>{
         const esthetismeText = formatReview('esthétisme',esthetique);
         const confortText = formatReview('confort', confort);
         alert(`Avis pour ${nom}: \n${esthetismeText}\n${confortText}`);
+        setShowReview(!showReview);
     };
 
 
@@ -31,7 +33,8 @@ function SneakerItem({ bestSeller,image, nom, marque, prix, style, esthetique, c
             <p className="sneaker-style">{style}</p>
 
             <div className= "sneaker_rewiew">
-                <button onClick={handleClickAvis}>Voir les avis</button>
+                <button onClick={handleToggleAvis}>
+                    {showReview ? 'Masquer les avis' : 'Voir les avis'}</button>
                 
             </div>
         </div>
