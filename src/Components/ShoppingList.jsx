@@ -9,16 +9,9 @@ function ShoppingList(){
             <div className={"sneakers-grid"}>
                 {sneakersList.map((sneaker) =>(
                     <SneakersItem
-                    bestSeller={sneaker.bestSeller}
-                    image={sneaker.image}
-                    key={sneaker.id}
-                    nom={sneaker.nom}
-                    marque={sneaker.marque}
-                    prix={sneaker.prix}
-                    style={sneaker.style}
-                    esthetique={sneaker.esthetique}
-                    confort={sneaker.confort}
-                    
+                        key={sneaker.id}
+                        sneakerData={sneaker}
+                        onAddToCart={onAddToCart}
                     />
                 ))}
             </div>
