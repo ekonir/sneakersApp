@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Banner from '../Components/Banner';
+import Banner from './Banner';
 import '../styles/App.css';
 import ShoppingList from '../Components/ShoppingList';
 import SneakerItem from '../Components/SneakerItem';
