@@ -82,3 +82,15 @@
   gap: 8px;
   margin-top: 10px;
 }
+
+button{
+   border-radius: 12px;
+   padding: 4px 8px;
+   font-size: 0.7rem;
+   background-color:gainsboro;
+}
+
+button:hover {
+  transform: translateY(-1px);  
+  box-shadow: 0 8px 25px rgba(90, 87, 73, 0.4);
+}

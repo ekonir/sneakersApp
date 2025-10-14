@@ -1,14 +1,14 @@
 import {sneakersList} from "../datas/sneakersList";
-import SneakersItem from "./SneakerItem";
+import SneakerItem from "./SneakerItem";
 import '../styles/ShoppingList.css';
 
-function ShoppingList(){
+function ShoppingList({onAddToCart}){
     return (
         <div className={"shopping-list"}>
             <h2>Nos Sneakers (Pisaneschi Léa)</h2>
             <div className={"sneakers-grid"}>
                 {sneakersList.map((sneaker) =>(
-                    <SneakersItem
+                    <SneakerItem
                         key={sneaker.id}
                         sneakerData={sneaker}
                         onAddToCart={onAddToCart}
