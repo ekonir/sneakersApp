@@ -6,6 +6,7 @@ function SneakerItem({sneakerData,onAddToCart}) {
     const [showReview, setShowReview] = useState(false)
 
     const{nom, marque, prix, style, esthetique, confort, image, bestSeller = false } = sneakerData;
+    
     const formatReview = (reviewType, scaleValue) => {
         const scaleType = reviewType === 'confort' ? '😌' : '💖'
         const icons = scaleType.repeat(scaleValue);
