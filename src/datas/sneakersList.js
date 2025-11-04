@@ -1,15 +1,15 @@
 import airMax from '../assets/sneakers/airJordan.jpg'
-import forceZoom from '../assets/sneakers/airJordan.jpg'
+import forceZoom from '../assets/sneakers/forceZoom.jpg'
 import airJordan from '../assets/sneakers/airJordan.jpg'
 import airForce from '../assets/sneakers/airJordan.jpg'
 
-import allstar from '../assets/sneakers/chuckTaylor.jpg'
+import allstar from '../assets/sneakers/allStarLitft.jpg'
 import chuckTaylor from '../assets/sneakers/chuckTaylor.jpg'
-import runStar from '../assets/sneakers/chuckTaylor.jpg'
+import runStar from '../assets/sneakers/allstar.jpg'
 
-import sneakersRouge from '../assets/sneakers/basketsPatch.jpg'
+import sneakersRouge from '../assets/sneakers/rougeVif.jpg'
 import basketsPatch from '../assets/sneakers/basketsPatch.jpg'
-import urbanStreet from '../assets/sneakers/basketsPatch.jpg'
+import urbanStreet from '../assets/sneakers/urbanStreet.jpg'
 
 export const sneakersList = [
   {
