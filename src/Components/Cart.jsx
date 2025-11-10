@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import App from '../Components/App';
 import '../styles/App.css';
 
 function Cart({ cartItems, onRemoveFromCart, onClearCart }) {

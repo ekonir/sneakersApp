@@ -31,12 +31,25 @@ function App() {
     });
   };
 
+  const removeFromCart = (idToRemove) => {
+  console.log('🗑️ Suppression demandée pour ID :', idToRemove);
+  setCart(prevCart =>
+    prevCart.map(item => item.id === idToRemove ? { ...item, quantity: item.quantity - 1 } : item
+      )
+      .filter(item => item.quantity > 0)
+  );
+};
+
+const clearCart = () => {
+  console.log('🧹 Panier vidé');
+  setCart([]);
+};
 
   return (
     <div className="App">
       <Banner /> {/* place le composant dans le jsx */}
       <ShoppingList onAddToCart={addToCart} />
-      <Cart cartItems={cart} />
+      <Cart cartItems={cart} onRemoveFromCart={removeFromCart} onClearCart={clearCart}/>
     </div>
   );
 
